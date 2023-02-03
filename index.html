@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="nav-bar">
+        <img src="images/logo nah.png" alt="website logo" class="logo-nah">
+        <ul class="bout">
+            <li><a href="">About me</a></li>
+            <li><a href="">Github</a></li>
+            <li><a href="">Contact me</a></li>
+
+        </ul>
+    </nav>
+
+    <div class="about-me">
+        <h2 class="name">
+            Oliver Mukoya
+        </h2>
+        <img src="images/headshot.jpg" alt="Oliver Mukoya headshot" class="headshot">
+        
+<p>
+    Student pursuing bachelor of science in  economics at Jomo Kenyatta University of Agriculture 
+</p>
+    </div>
+    <div class="footer">
+        <footer>
+            <ul>
+                <li>About me</li>
+                <li>Github</li>
+                <li>Contact me</li>
+            </ul>
+        </footer>
+    </div>
+    <section>
+        <h2>Contact Me</h2>
+        <form id="contact" onsubmit="greet(); return false;">
+<label for="FIrstName">FIrstName</label>
+<input type="text" class="names">
+<label for="SecondName">SecondName</label>
+<input type="text" class="names">
+<input type="submit">
+        </form>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <form id="demo">
+<input id="name" type="text" placeholder="name">
+<input type="submit">
+    </form>
+<script>
+   document.getElementById("contact").onsubmit=function greet(){
+    alert("Hello" +document.getElementsByClassName("names").value)
+   }
+</script>
+</body>
+</html>
